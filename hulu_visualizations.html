@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hulu Visualizations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header h3 {
+      margin-top: 5px;
+      font-size: 18px;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .content ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    .content li {
+      margin-bottom: 10px;
+    }
+
+    .tableauPlaceholder {
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hulu Movies & TV Shows: What the Data Shows</h1>
+    <h3>By Hudson Hok</h3>
+  </header>
+  <div class="content">
+    <p><strong>Interacting with the Visualizations:</strong></p>
+    <ul>
+      <li><strong>General Dashboard:</strong> This dashboard gives the holistic composition of Hulu’s content catalog. The pie charts show the balance between movies and TV shows as well as the top contributing countries. Additionally, there is a line graph showing the released movies and TV shows over time as well as the average runtime within a given year. You can click specific pie slices on either to filter the visualizations by show type. You can also click movies or TV shows on the area graph to show the respective distribution of production countries.</li>
+      <li><strong>Genres Dashboard:</strong> This dashboard guides the viewer through the diverse genres available on Hulu. The bar charts showcase the top genres organized by show type, offering insights into the platform's genre preferences. You can click on a specific genre/show type to dynamically render the distribution of age ratings on the dynamic tree map and frequency on the bar chart as well as highlight it on the bubble chart and the area graph. You can also click on a specific age rating category to filter the other visualizations.</li>
+      <li><strong>Actors Dashboard:</strong> This dashboard gives a deeper dive into the actors that contribute significantly to the content on Hulu. A horizontal bar chart shows a list of actors along with a search bar to search for a particular one. The chart also shows their average IMDb scores, which helps viewers understand their relative performance. Clicking on a specific actor filters their distribution of content in the age ratings treemap as well as their contribution to content type (genre and show type) in the genres bar chart.</li>
+      <li><strong>Source:</strong> Access the dataset used <a href="https://www.kaggle.com/datasets/victorsoeiro/hulu-tv-shows-and-movies?resource=download">here</a></li>
+    </ul>
+    <div class='tableauPlaceholder' id='viz1714075842040' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;cs&#47;csce567_final_17140754514020&#47;General&#47;1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='csce567_final_17140754514020&#47;General' />
+        <param name='tabs' value='yes' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;cs&#47;csce567_final_17140754514020&#47;General&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1714075842040');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width='1600px';
+      vizElement.style.height='950px';
+    } else if (divElement.offsetWidth > 500) {
+      vizElement.style.width='1600px';
+      vizElement.style.height='950px';
+    } else {
+      vizElement.style.width='100%';
+      vizElement.style.height='1650px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>
